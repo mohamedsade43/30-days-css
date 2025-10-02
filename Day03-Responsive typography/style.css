@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  position: relative;
+  border-radius: 10px;
+}
+
+/* Responsive Typography */
+h1 {
+  font-size: clamp(1.5rem, 2.5vw + 1rem, 2.8rem);
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+p {
+  font-size: clamp(1rem, 1.2vw + 0.5rem, 1.25rem);
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Material Icon style */
+.material-icons {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+/* Extra responsiveness for very small screens */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
